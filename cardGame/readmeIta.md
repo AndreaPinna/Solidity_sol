@@ -6,8 +6,11 @@ Esercitazione di Solidity del 30 aprile 2019 del corso di APT di prof. Marchesi.
 
 Utilizzo.
 I contratti Deck e Arena sono caricati sulla blockchain di test Ropsten con address:
+
 Deck: 0x42fd01c9a5a0c48a19c891bf22a16aa57459443f
+
 Arena: 0xfadf97ed2940cae55a4a3c8f40b63644bf9025b8
+
 
 Compilare i due contratti Deck e Arena e caricare la loro istanza dai due address (su remix con "at address").
 
