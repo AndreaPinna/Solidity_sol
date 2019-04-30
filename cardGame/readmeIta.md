@@ -1,11 +1,9 @@
-Autore: Andrea Pinna
-
-Token ERC721 by Openzeppelin:  https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts/token/ERC721
-
-Università di Cagliari.
+Andrea Pinna - Università di Cagliari.
 Esercitazione di Solidity del 30 aprile 2019 del corso di APT di prof. Marchesi.
 
+Contratti dimostrativi per la realizzazione di un GCC di base.
 
+Utilizzo.
 I contratti Deck e Arena sono caricati sulla blockchain di test Ropsten con address:
 Deck: 0x42fd01c9a5a0c48a19c891bf22a16aa57459443f
 Arena: 0xfadf97ed2940cae55a4a3c8f40b63644bf9025b8
@@ -27,3 +25,8 @@ Debole: 0xF20541F9D55F49F9C90C00ffED353Dd87638f666
 
 playerScore(address) per consocere il punteggio di un address.
 scores() per conoscere la lista degli address e il relativo punteggio.
+
+Avviso: i contratti presentano bug. Proporre modifiche per migliorare l'implementazione.
+
+Spiegazioni nelle slide del corso.
+Token ERC721 e librerire estratte da Openzeppelin:  https://github.com/OpenZeppelin/openzeppelin-solidity/tree/master/contracts/token/ERC721
