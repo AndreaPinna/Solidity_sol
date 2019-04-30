@@ -24,6 +24,14 @@ contract Deck is ERC721{
     }
 
 
+    modifier onlyCardAllowed(uint32 id){
+        require(ownerOf(id)==msg.sender ||
+                getApproved(id)==msg.sender ||
+                isApprovedForAll(ownerOf(id),msg.sender) ,
+                "You don't own this card");
+        _;
+    }
+
     function buyCard() payable checkValue public {
         lastid=lastid+1;
         _mint(msg.sender,lastid);
@@ -35,13 +43,6 @@ contract Deck is ERC721{
         _players[msg.sender].cardVect.push(lastid);        
     }
 
-
-    modifier onlyCardAllowed(uint32 id){
-        require(ownerOf(id)==msg.sender ||
-                getApproved(id)==msg.sender ||
-                isApprovedForAll(ownerOf(id),msg.sender) ,"You don't own this card");
-        _;
-    }
     
     function cardInfo(uint32 id) public onlyCardAllowed(id) view returns(uint8 attack, uint8 defence) {
         attack = _cards[id].attack;
