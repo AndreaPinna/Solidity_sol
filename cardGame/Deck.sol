@@ -49,7 +49,7 @@ contract Deck is ERC721{
         defence = _cards[id].defence;  
     }
     
-    function getCards() public view returns(uint32[] memory){
+    function getBoughtCards() public view returns(uint32[] memory){
         return(_players[msg.sender].cardVect);   
     }
     
