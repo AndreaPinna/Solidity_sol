@@ -31,7 +31,9 @@ contract Channel{
         payable(msg.sender).transfer(amount);
     }
     
-    // create a selfdestruct to close the channel and recover funds 
+    // create a selfdestruct to close the channel and recover the funds 
+    // update the code to avoid double payments
+    // update the code to avoid the issuance of overdrafts
     
 }
 
